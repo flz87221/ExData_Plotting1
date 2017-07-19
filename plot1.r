@@ -13,7 +13,7 @@ data <- read.table(text = grep("^[1,2]/2/2007",readLines(files),value=TRUE), sep
 # open device
 png(filename = './plot1.png', width = 480, height = 480, units='px')
 # plot figure
-with(data, hist(Global_active_power, xlab = 'Global Active Power (kilowatt)', main = 'Global Active Power', col = 'red'))
+with(data, hist(Global_active_power, xlab = 'Global Active Power (kilowatts)', main = 'Global Active Power', col = 'red'))
 
 # close device
 dev.off()
